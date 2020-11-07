@@ -1,24 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oB6-Rf-Eb2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmO-hN-FT5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <segue destination="7Mn-K7-YLT" kind="embed" id="Wub-KX-IUj"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OmO-hN-FT5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="47n-Oy-USH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OmO-hN-FT5" secondAttribute="trailing" id="8lF-cn-axB"/>
+                            <constraint firstItem="OmO-hN-FT5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pdm-pj-Nr0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OmO-hN-FT5" secondAttribute="bottom" id="Und-8I-b8J"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6e4-OP-NNC">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="VRR-tx-NOb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqU-hV-GuD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oB6-Rf-Eb2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PZK-NR-0HZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xDb-B4-m0R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Szp-56-wUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Br5-Sg-4JJ">
+            <objects>
+                <viewController id="7Mn-K7-YLT" customClass="ViewController" customModule="prototype_ui_update" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dmh-6H-ykh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I82-7A-JVj" userLabel="Circle button area" customClass="RoundedView" customModule="prototype_ui_update" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="374" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8U-rK-dVn" customClass="RoundedButton" customModule="prototype_ui_update" customModuleProvider="target">
+                                        <rect key="frame" x="126.5" y="0.0" width="121" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="3Vf-Sz-VNL"/>
+                                            <constraint firstAttribute="width" secondItem="C8U-rK-dVn" secondAttribute="height" multiplier="121:120" id="K9e-cR-Ko6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="ms8-0F-xH3"/>
+                                    <constraint firstItem="C8U-rK-dVn" firstAttribute="centerX" secondItem="I82-7A-JVj" secondAttribute="centerX" id="prg-ju-ZWd"/>
+                                    <constraint firstItem="C8U-rK-dVn" firstAttribute="centerY" secondItem="I82-7A-JVj" secondAttribute="centerY" id="r2o-yR-NtV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="59Y-Xd-f5N">
+                                <rect key="frame" x="20" y="204" width="374" height="696"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <sections/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2F-Ot-72v">
+                                <rect key="frame" x="20" y="950" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.54509803921568623" blue="0.94901960784313721" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="59Y-Xd-f5N" firstAttribute="leading" secondItem="dmh-6H-ykh" secondAttribute="leadingMargin" id="29f-QE-Ofe"/>
+                            <constraint firstItem="E2F-Ot-72v" firstAttribute="leading" secondItem="dmh-6H-ykh" secondAttribute="leading" constant="20" id="5G5-bH-gFO"/>
+                            <constraint firstItem="59Y-Xd-f5N" firstAttribute="trailing" secondItem="dmh-6H-ykh" secondAttribute="trailingMargin" id="6sv-JI-Hep"/>
+                            <constraint firstAttribute="bottom" secondItem="59Y-Xd-f5N" secondAttribute="bottom" constant="100" id="KGr-zh-sLr"/>
+                            <constraint firstItem="I82-7A-JVj" firstAttribute="leading" secondItem="dmh-6H-ykh" secondAttribute="leadingMargin" id="LxI-JP-dig"/>
+                            <constraint firstAttribute="bottom" secondItem="E2F-Ot-72v" secondAttribute="bottom" constant="20" id="Vym-Hw-l4B"/>
+                            <constraint firstItem="59Y-Xd-f5N" firstAttribute="top" secondItem="I82-7A-JVj" secondAttribute="bottom" constant="20" id="bbH-E3-Vnw"/>
+                            <constraint firstItem="I82-7A-JVj" firstAttribute="trailing" secondItem="dmh-6H-ykh" secondAttribute="trailingMargin" id="buH-cE-r4m"/>
+                            <constraint firstItem="I82-7A-JVj" firstAttribute="top" secondItem="dmh-6H-ykh" secondAttribute="topMargin" constant="20" id="myZ-py-qxm"/>
+                            <constraint firstAttribute="trailing" secondItem="E2F-Ot-72v" secondAttribute="trailing" constant="20" id="qOh-ZH-bWT"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqh-fd-URt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2143" y="66"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Xau-dv-Hz8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="fsb-cH-haq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSY-0L-oML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="-608"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="C8U-rK-dVn">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
