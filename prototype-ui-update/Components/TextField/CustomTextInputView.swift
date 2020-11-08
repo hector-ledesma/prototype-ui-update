@@ -15,25 +15,14 @@ class CustomTextInputView: UIView {
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var bottomBarView: UIView!
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
-    }
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        commonInit()
-    }
-
     override func layoutSubviews() {
         super.layoutSubviews()
 
         setUpConstraints()
-//        self.bounds = CGRect(x: 0, y: 0, width: 200, height: 125)
     }
 
-    private func commonInit() {
-    }
-
+    /// Initializer for this .xib. It will dynamically load the component.
+    /// - Returns: Returns the generated component
     public func loadView() -> UIView {
         let bundleName = Bundle(for: type(of: self))
         let nibName = String(describing: type(of: self))
@@ -44,6 +33,7 @@ class CustomTextInputView: UIView {
         return view
     }
 
+    /// Once the component has been properly loaded, programmatically constrain all inner components.
     private func setUpConstraints() {
 
         // Set Up Title Label

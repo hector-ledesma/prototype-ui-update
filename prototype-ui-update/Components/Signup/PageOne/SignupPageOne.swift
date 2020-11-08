@@ -26,13 +26,6 @@ class SignupPageOne: UIView {
     let lastNameInput = CustomTextInputView().loadView() as! CustomTextInputView
     let emailInput = CustomTextInputView().loadView() as! CustomTextInputView
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
     override init(frame: CGRect) {
         super.init(frame: frame)
