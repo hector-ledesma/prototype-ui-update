@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="yfk-bb-OFq">
             <objects>
-                <viewController id="Pd6-tQ-hSB" customClass="ViewController" customModule="prototype_ui_update" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pd6-tQ-hSB" customClass="SignupViewController" customModule="prototype_ui_update" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qfJ-eG-a4K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtZ-Eu-g3Y">
-                                <rect key="frame" x="20" y="196" width="374" height="666"/>
+                                <rect key="frame" x="20" y="88" width="374" height="684"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="WdK-eF-fKh"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="rvF-Uu-q4Y"/>
                             </scrollView>
@@ -42,9 +42,9 @@
                             <constraint firstItem="XtZ-Eu-g3Y" firstAttribute="width" secondItem="qfJ-eG-a4K" secondAttribute="width" id="L3i-OT-XIw"/>
                             <constraint firstItem="bR6-fw-Tl1" firstAttribute="bottom" secondItem="ecU-mQ-Enr" secondAttribute="bottom" constant="19" id="Wuf-6M-1LC"/>
                             <constraint firstItem="XtZ-Eu-g3Y" firstAttribute="centerX" secondItem="bR6-fw-Tl1" secondAttribute="centerX" id="aaU-KE-mXy"/>
-                            <constraint firstItem="XtZ-Eu-g3Y" firstAttribute="centerY" secondItem="bR6-fw-Tl1" secondAttribute="centerY" id="azO-Yg-rLt"/>
-                            <constraint firstItem="XtZ-Eu-g3Y" firstAttribute="height" secondItem="qfJ-eG-a4K" secondAttribute="height" id="dnH-LH-gSg"/>
                             <constraint firstItem="ecU-mQ-Enr" firstAttribute="leading" secondItem="9Zf-KF-RwE" secondAttribute="trailing" constant="20" id="jqd-Fa-aNs"/>
+                            <constraint firstItem="ecU-mQ-Enr" firstAttribute="top" secondItem="XtZ-Eu-g3Y" secondAttribute="bottom" constant="20" id="oHD-5W-jwe"/>
+                            <constraint firstItem="XtZ-Eu-g3Y" firstAttribute="top" secondItem="bR6-fw-Tl1" secondAttribute="top" id="saO-yo-lZK"/>
                             <constraint firstItem="Ra6-qt-esG" firstAttribute="leading" secondItem="ecU-mQ-Enr" secondAttribute="trailing" constant="20" id="vkk-Kh-VST"/>
                         </constraints>
                     </view>

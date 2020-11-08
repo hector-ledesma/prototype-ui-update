@@ -90,8 +90,4 @@ class SignupPageOne: UIView {
         emailInput.titleLabel.text = "Email"
     }
 
-    func setUpButtons() {
-
-    }
-
 }

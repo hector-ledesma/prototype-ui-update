@@ -50,8 +50,8 @@ class CustomTextInputView: UIView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
-            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
+            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 1),
+            titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 1)
         ])
 
         // Set Up Text Input

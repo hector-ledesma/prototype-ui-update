@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C5072CE2555D21C008A7E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5072CD2555D21C008A7E0A /* AppDelegate.swift */; };
 		9C5072D02555D21C008A7E0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5072CF2555D21C008A7E0A /* SceneDelegate.swift */; };
-		9C5072D22555D21C008A7E0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5072D12555D21C008A7E0A /* ViewController.swift */; };
+		9C5072D22555D21C008A7E0A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5072D12555D21C008A7E0A /* SignupViewController.swift */; };
 		9C5072D52555D21C008A7E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5072D32555D21C008A7E0A /* Main.storyboard */; };
 		9C5072D72555D21E008A7E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5072D62555D21E008A7E0A /* Assets.xcassets */; };
 		9C5072DA2555D21E008A7E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5072D82555D21E008A7E0A /* LaunchScreen.storyboard */; };
@@ -36,13 +36,15 @@
 		9C65E4A525575F6600BF65EF /* CustomTextInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C65E4A425575F6600BF65EF /* CustomTextInputView.xib */; };
 		9C65E4A825576A2A00BF65EF /* CustomTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65E4A725576A2A00BF65EF /* CustomTextInputView.swift */; };
 		9C65E4AB255771A000BF65EF /* SignupPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65E4AA255771A000BF65EF /* SignupPageOne.swift */; };
+		9C69A6682558949200AD646A /* SignupPageTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C69A6672558949200AD646A /* SignupPageTwo.xib */; };
+		9C69A66B255894A700AD646A /* SignupPageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69A66A255894A700AD646A /* SignupPageTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C5072CA2555D21C008A7E0A /* prototype-ui-update.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prototype-ui-update.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5072CD2555D21C008A7E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5072CF2555D21C008A7E0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C5072D12555D21C008A7E0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C5072D12555D21C008A7E0A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		9C5072D42555D21C008A7E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C5072D62555D21E008A7E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C5072D92555D21E008A7E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,8 @@
 		9C65E4A425575F6600BF65EF /* CustomTextInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextInputView.xib; sourceTree = "<group>"; };
 		9C65E4A725576A2A00BF65EF /* CustomTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextInputView.swift; sourceTree = "<group>"; };
 		9C65E4AA255771A000BF65EF /* SignupPageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageOne.swift; sourceTree = "<group>"; };
+		9C69A6672558949200AD646A /* SignupPageTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupPageTwo.xib; sourceTree = "<group>"; };
+		9C69A66A255894A700AD646A /* SignupPageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,7 @@
 				9C65E48E25572BE000BF65EF /* Components */,
 				9C65E48D25572BD700BF65EF /* Signup */,
 				9C65E48C25572BB400BF65EF /* App */,
-				9C5072D12555D21C008A7E0A /* ViewController.swift */,
+				9C5072D12555D21C008A7E0A /* SignupViewController.swift */,
 				9C5072D32555D21C008A7E0A /* Main.storyboard */,
 				9C5072D62555D21E008A7E0A /* Assets.xcassets */,
 				9C5072D82555D21E008A7E0A /* LaunchScreen.storyboard */,
@@ -186,6 +190,7 @@
 		9C65E49C25575BA300BF65EF /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				9C69A6662558947B00AD646A /* PageTwo */,
 				9C65E4A225575C9400BF65EF /* PageOne */,
 			);
 			path = Signup;
@@ -198,6 +203,15 @@
 				9C65E49E25575C1900BF65EF /* SignupPageOne.xib */,
 			);
 			path = PageOne;
+			sourceTree = "<group>";
+		};
+		9C69A6662558947B00AD646A /* PageTwo */ = {
+			isa = PBXGroup;
+			children = (
+				9C69A6672558949200AD646A /* SignupPageTwo.xib */,
+				9C69A66A255894A700AD646A /* SignupPageTwo.swift */,
+			);
+			path = PageTwo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +288,7 @@
 				9C5073012555E010008A7E0A /* SFUIText-LightItalic.ttf in Resources */,
 				9C5073112555FFB4008A7E0A /* CustomTextInputTableViewCell.xib in Resources */,
 				9C5072E92555DEA6008A7E0A /* FiraSans-ExtraBold.ttf in Resources */,
+				9C69A6682558949200AD646A /* SignupPageTwo.xib in Resources */,
 				9C5072FE2555E010008A7E0A /* SFUIText-Medium.ttf in Resources */,
 				9C5072E82555DEA6008A7E0A /* FiraSans-SemiBold.ttf in Resources */,
 				9C5072D52555D21C008A7E0A /* Main.storyboard in Resources */,
@@ -287,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C5072D22555D21C008A7E0A /* ViewController.swift in Sources */,
+				9C5072D22555D21C008A7E0A /* SignupViewController.swift in Sources */,
 				9C5073102555FFB4008A7E0A /* CustomTextInputTableViewCell.swift in Sources */,
 				9C65E49225572D1C00BF65EF /* SignupController.swift in Sources */,
 				9C65E4A825576A2A00BF65EF /* CustomTextInputView.swift in Sources */,
@@ -296,6 +311,7 @@
 				9C50730C2555E8DC008A7E0A /* RoundedView.swift in Sources */,
 				9C5072CE2555D21C008A7E0A /* AppDelegate.swift in Sources */,
 				9C5072D02555D21C008A7E0A /* SceneDelegate.swift in Sources */,
+				9C69A66B255894A700AD646A /* SignupPageTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
