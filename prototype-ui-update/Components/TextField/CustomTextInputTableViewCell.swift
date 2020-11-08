@@ -9,6 +9,12 @@ import UIKit
 
 class CustomTextInputTableViewCell: UITableViewCell {
 
+    // MARK: - Outlets
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var inputTextField: UITextField!
+    @IBOutlet private weak var bottomBarView: UIView!
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,10 +25,6 @@ class CustomTextInputTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var inputTextField: UITextField!
-    @IBOutlet private weak var bottomBarView: UIView!
 
     public func setUpViews(title: String, placeholder: String) {
         self.titleLabel.text = title

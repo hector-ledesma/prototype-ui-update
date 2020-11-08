@@ -15,7 +15,13 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextInputTableViewCell" customModule="prototype_ui_update" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomBarView" destination="xVO-Ky-tQm" id="H3n-He-22I"/>
+                <outlet property="inputTextField" destination="DD3-oi-Gyu" id="6E0-Db-acm"/>
+                <outlet property="titleLabel" destination="pQj-js-o6m" id="zCq-pv-pZe"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="CustomTextInputTableViewCell" customModule="prototype_ui_update" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>

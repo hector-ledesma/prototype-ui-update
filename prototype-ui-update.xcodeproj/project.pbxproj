@@ -32,6 +32,10 @@
 		9C5073102555FFB4008A7E0A /* CustomTextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50730E2555FFB4008A7E0A /* CustomTextInputTableViewCell.swift */; };
 		9C5073112555FFB4008A7E0A /* CustomTextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C50730F2555FFB4008A7E0A /* CustomTextInputTableViewCell.xib */; };
 		9C65E49225572D1C00BF65EF /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65E49125572D1C00BF65EF /* SignupController.swift */; };
+		9C65E49F25575C1900BF65EF /* SignupPageOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C65E49E25575C1900BF65EF /* SignupPageOne.xib */; };
+		9C65E4A525575F6600BF65EF /* CustomTextInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C65E4A425575F6600BF65EF /* CustomTextInputView.xib */; };
+		9C65E4A825576A2A00BF65EF /* CustomTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65E4A725576A2A00BF65EF /* CustomTextInputView.swift */; };
+		9C65E4AB255771A000BF65EF /* SignupPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65E4AA255771A000BF65EF /* SignupPageOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		9C50730E2555FFB4008A7E0A /* CustomTextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextInputTableViewCell.swift; sourceTree = "<group>"; };
 		9C50730F2555FFB4008A7E0A /* CustomTextInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextInputTableViewCell.xib; sourceTree = "<group>"; };
 		9C65E49125572D1C00BF65EF /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		9C65E49E25575C1900BF65EF /* SignupPageOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupPageOne.xib; sourceTree = "<group>"; };
+		9C65E4A425575F6600BF65EF /* CustomTextInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextInputView.xib; sourceTree = "<group>"; };
+		9C65E4A725576A2A00BF65EF /* CustomTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextInputView.swift; sourceTree = "<group>"; };
+		9C65E4AA255771A000BF65EF /* SignupPageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +166,7 @@
 		9C65E48E25572BE000BF65EF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9C65E49C25575BA300BF65EF /* Signup */,
 				9C65E48F25572BEF00BF65EF /* TextField */,
 			);
 			path = Components;
@@ -168,8 +177,27 @@
 			children = (
 				9C50730E2555FFB4008A7E0A /* CustomTextInputTableViewCell.swift */,
 				9C50730F2555FFB4008A7E0A /* CustomTextInputTableViewCell.xib */,
+				9C65E4A425575F6600BF65EF /* CustomTextInputView.xib */,
+				9C65E4A725576A2A00BF65EF /* CustomTextInputView.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		9C65E49C25575BA300BF65EF /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				9C65E4A225575C9400BF65EF /* PageOne */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		9C65E4A225575C9400BF65EF /* PageOne */ = {
+			isa = PBXGroup;
+			children = (
+				9C65E4AA255771A000BF65EF /* SignupPageOne.swift */,
+				9C65E49E25575C1900BF65EF /* SignupPageOne.xib */,
+			);
+			path = PageOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +260,7 @@
 				9C5073022555E010008A7E0A /* SFUIText-HeavyItalic.ttf in Resources */,
 				9C5072DA2555D21E008A7E0A /* LaunchScreen.storyboard in Resources */,
 				9C5072FB2555E010008A7E0A /* SFUIText-Heavy.ttf in Resources */,
+				9C65E4A525575F6600BF65EF /* CustomTextInputView.xib in Resources */,
 				9C5072F82555E010008A7E0A /* SFUIText-Semibold.ttf in Resources */,
 				9C5072FF2555E010008A7E0A /* SFUIText-SemiboldItalic.ttf in Resources */,
 				9C5072FC2555E010008A7E0A /* SFUIText-Regular.ttf in Resources */,
@@ -239,6 +268,7 @@
 				9C5073002555E010008A7E0A /* SFUIText-Bold.ttf in Resources */,
 				9C5072F72555E00F008A7E0A /* SFUIText-BoldItalic.ttf in Resources */,
 				9C5072F92555E010008A7E0A /* SFUIText-RegularItalic.ttf in Resources */,
+				9C65E49F25575C1900BF65EF /* SignupPageOne.xib in Resources */,
 				9C5072FA2555E010008A7E0A /* SFUIText-MediumItalic.ttf in Resources */,
 				9C5072D72555D21E008A7E0A /* Assets.xcassets in Resources */,
 				9C5073012555E010008A7E0A /* SFUIText-LightItalic.ttf in Resources */,
@@ -260,6 +290,8 @@
 				9C5072D22555D21C008A7E0A /* ViewController.swift in Sources */,
 				9C5073102555FFB4008A7E0A /* CustomTextInputTableViewCell.swift in Sources */,
 				9C65E49225572D1C00BF65EF /* SignupController.swift in Sources */,
+				9C65E4A825576A2A00BF65EF /* CustomTextInputView.swift in Sources */,
+				9C65E4AB255771A000BF65EF /* SignupPageOne.swift in Sources */,
 				9C5073092555E6A1008A7E0A /* RoundedButton.swift in Sources */,
 				9C50730C2555E8DC008A7E0A /* RoundedView.swift in Sources */,
 				9C5072CE2555D21C008A7E0A /* AppDelegate.swift in Sources */,
@@ -411,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "prototype-ui-update/Info.plist";
+				INFOPLIST_FILE = "prototype-ui-update/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,7 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "prototype-ui-update/Info.plist";
+				INFOPLIST_FILE = "prototype-ui-update/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
