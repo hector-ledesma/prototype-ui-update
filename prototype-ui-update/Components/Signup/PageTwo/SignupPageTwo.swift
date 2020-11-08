@@ -107,8 +107,9 @@ class SignupPageTwo: UIView {
             self.skillsInput.topAnchor.constraint(equalTo: self.currentJobInput.bottomAnchor),
             self.skillsInput.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             self.skillsInput.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
-            self.contentView.bottomAnchor.constraint(equalTo: self.skillsInput.bottomAnchor)
         ])
+
+//        self.backgroundColor = UIColor.red
 
         self.skillsInput.inputTextField.placeholder = "Communication, Leadership"
         self.skillsInput.titleLabel.text = "My Skills"

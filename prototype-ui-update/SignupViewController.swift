@@ -50,7 +50,7 @@ class SignupViewController: UIViewController {
 
         scrollView.delegate = self
         scrollView.isDirectionalLockEnabled = true;
-        scrollView.backgroundColor = UIColor.purple
+//        scrollView.backgroundColor = UIColor.purple
 
         //  Constraints
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -59,7 +59,7 @@ class SignupViewController: UIViewController {
             scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 1),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: pageControl.topAnchor, constant: 20)
+            scrollView.bottomAnchor.constraint(equalTo: pageControl.topAnchor, constant: -20)
         ])
     }
 
